@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyZyGy Institute - Reach Your Potential</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="SyZyGy Logo">
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#class">Class</a></li>
+                    <li><a href="#lecturers">Our Lecturers</a></li>
+                    <li><a href="#timetable">Time Table</a></li>
+                    <li><a href="#feedback">Students Feedback</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="nav-btn">
+                <a href="#login" class="btn btn-red">Student Login</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slide active">
+            <img src="images/hero-image.jpg" alt="Classroom Audience" class="hero-img">
+            <div class="hero-overlay">
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="arrow left" id="prevSlide" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="arrow right" id="nextSlide" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Cards -->
+    <section class="features container">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+            <h3>Enhance Your Learning Experience</h3>
+            <p>SyZyGy Higher Education Center offers innovative tools and resources designed to elevate your educational journey and make learning engaging and effective.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Achieve Your Academic Goals</h3>
+            <p>With a focus on student success, SyZyGy Higher Education Center provides personalized guidance to help you reach your full potential and excel academically.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Your Pathway to Success</h3>
+            <p>SyZyGy Higher Education Center is dedicated to empowering students with the knowledge and skills they need to thrive, ensuring a clear path to academic and personal success.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about container">
+        <div class="about-text">
+            <h2>Reach Your Potential with SyZyGy!</h2>
+            <p>Are you ready to elevate your learning experience and achieve your academic goals? Look no further—SyZyGy Education is here to guide you to success!</p>
+            <p>At SyZyGy, we offer expert-led online classes designed to empower students of all levels to excel in their studies. Our experienced instructors provide engaging, high-quality education tailored to help you reach your full potential.</p>
+            <p>Join us today and take the next step toward academic excellence!</p>
+        </div>
+        <div class="about-image">
+            <img src="images/about-image.jpg" alt="Students entering SyZyGy">
+        </div>
+    </section>
+
+    <!-- Lecturers Section -->
+    <section class="lecturers" id="lecturers">
+        <div class="container">
+            <h2 class="section-title">Our Talented <span class="text-blue">Lecturers</span></h2>
+            
+            <!-- Carousel Visualization -->
+            <div class="lecturer-carousel-wrapper">
+                <button class="carousel-nav prev" id="carouselPrev" aria-label="Previous lecturers">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="lecturer-carousel" id="lecturerCarousel">
+                    <div class="l-card" data-index="0">
+                        <img src="images/lecturer-placeholder.png" alt="Lecturer 1">
+                    </div>
+                    <div class="l-card" data-index="1">
+                        <img src="images/lecturer-placeholder.png" alt="Lecturer 2">
+                    </div>
+                    <div class="l-card" data-index="2">
+                        <img src="images/lecturer-placeholder.png" alt="Lecturer 3">
+                    </div>
+                    <div class="l-card" data-index="3">
+                        <img src="images/lecturer-placeholder.png" alt="Lecturer 4">
+                    </div>
+                    <div class="l-card" data-index="4">
+                        <img src="images/lecturer-placeholder.png" alt="Lecturer 5">
+                    </div>
+                </div>
+                
+                <button class="carousel-nav next" id="carouselNext" aria-label="Next lecturers">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Grid of Lecturers -->
+            <div class="lecturer-grid">
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Mahesh Dissanike</h4>
+                        <p>Physics</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Chamara Sampath</h4>
+                        <p>Chemistry</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Prof Name</h4>
+                        <p>Mathematics</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Prof Name</h4>
+                        <p>Biology</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Prof Name</h4>
+                        <p>ICT</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Amal Ruwan</h4>
+                        <p>Commerce</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Kavindu Jayashan</h4>
+                        <p>English</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid-card">
+                    <div class="card-top">
+                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4>Madhawa Senarathna</h4>
+                        <p>Economics</p>
+                        <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-btn-container">
+                <a href="#" class="btn btn-blue-rounded">Explore All Teachers <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LMS Banner -->
+    <section class="lms-banner">
+        <div class="container lms-content">
+            <div class="lms-text">
+                <h3>SyZyGy Learning Management System</h3>
+                <p>VALUE ADDED SERVICES</p>
+            </div>
+            <a href="#" class="btn btn-white">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Why SyZyGy -->
+    <section class="why-us container">
+        <h2 class="section-title">Why <span class="text-blue">SyZyGy ?</span></h2>
+        <p class="section-subtitle">A Journey of Growth and Excellence</p>
+        <p class="section-desc">Since its inception, SyZyGy Institute has been committed to providing high-quality education and empowering students to achieve their academic goals.</p>
+
+        <div class="why-grid">
+            <div class="why-item">
+                <img src="images/icon-physical.png" alt="Physical Classes Icon">
+                <div>
+                    <h4>Physical Classes</h4>
+                    <p>Physical classes offer direct instruction, hands-on learning, and real-time interaction.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <img src="images/icon-online.png" alt="Online Classes Icon">
+                <div>
+                    <h4>Online Classes</h4>
+                    <p>Live Zoom classes with Edumix Live offer an interactive and flexible learning experience.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <img src="images/icon-online.png" alt="Class Recording Icon">
+                <div>
+                    <h4>Class Recording</h4>
+                    <p>Recorded classes with Edumix offer flexible learning, allowing students to study anytime.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <img src="images/icon-pack.png" alt="Study Packs Icon">
+                <div>
+                    <h4>Study Packs</h4>
+                    <p>StudyPacks with Edumix offer comprehensive learning resources providing students access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time Tables -->
+    <section class="timetables container" id="timetable">
+        <h2 class="section-title text-blue">Time Tables</h2>
+        <div class="timetable-grid">
+            <div class="tt-card">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <h3>2025 Classes</h3>
+            </div>
+            <div class="tt-card">
+                <i class="far fa-clock fa-2x"></i>
+                <h3>2026 Classes</h3>
+            </div>
+            <div class="tt-card">
+                <i class="far fa-calendar-check fa-2x"></i>
+                <h3>2027 Classes</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section -->
+    <section class="app-section">
+        <div class="container">
+            <h2 class="section-title">Built for <span class="text-blue">Students</span></h2>
+            <p class="section-desc">Rich set of features to provide a boundless digital learning experience for Sri Lankan students</p>
+            
+            <div class="app-container">
+                <div class="app-image-side">
+                    <img src="images/phones-mockup.png" alt="Edumix App Screenshot">
+                </div>
+                <div class="app-text-side">
+                    <h3 class="orange-text">edumix</h3>
+                    <p>edumix is a simple and intuitive modern learning platform which uses latest technologies to provide a boundless digital learning experience for Sri Lankan students.</p>
+                    <div class="support-box">
+                        <div class="icon-bolt"><i class="fas fa-bolt fa-2x"></i></div>
+                        <div>
+                            <h4>Support Hotline</h4>
+                            <p>Quick and reliable tech support for all your technical problems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback container" id="feedback">
+        <h2 class="section-title">Students <span class="text-blue">Feedbacks</span></h2>
+        <div class="feedback-grid">
+            <div class="fb-card">
+                <div class="fb-header">
+                    <img src="images/avatar-small.png" alt="Student">
+                    <div>
+                        <h5>John Doe</h5>
+                        <span>Royal College</span>
+                    </div>
+                </div>
+                <p>Excellent teaching methods and very supportive lecturers. Highly recommend SyZyGy!</p>
+            </div>
+            <div class="fb-card">
+                <div class="fb-header">
+                    <img src="images/avatar-small.png" alt="Student">
+                    <div>
+                        <h5>Jane Smith</h5>
+                        <span>Visakha Vidyalaya</span>
+                    </div>
+                </div>
+                <p>The online platform is amazing! I can study anytime, anywhere. Great experience!</p>
+            </div>
+            <div class="fb-card">
+                <div class="fb-header">
+                    <img src="images/avatar-small.png" alt="Student">
+                    <div>
+                        <h5>Alex Fernando</h5>
+                        <span>Ananda College</span>
+                    </div>
+                </div>
+                <p>Best institute for A/L preparation. The study materials are comprehensive and helpful.</p>
+            </div>
+            <div class="fb-card">
+                <div class="fb-header">
+                    <img src="images/avatar-small.png" alt="Student">
+                    <div>
+                        <h5>Sarah Perera</h5>
+                        <span>Ladies' College</span>
+                    </div>
+                </div>
+                <p>Teachers are very knowledgeable and caring. They helped me improve my grades significantly!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq container" id="faq">
+        <h2 class="section-title">Frequently Asked <span class="text-blue">Questions</span></h2>
+        <div class="faq-list">
+            <div class="faq-item" data-faq="1">
+                <div class="faq-question">
+                    <span>How do I enroll in classes?</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can enroll in classes by visiting our Student Login portal, creating an account, and selecting the courses you wish to join. Our support team is also available to assist you with the enrollment process.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-faq="2">
+                <div class="faq-question">
+                    <span>What are the class timings?</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer flexible class timings including weekday evenings and weekends. You can check our Time Table section for detailed schedules for each subject and year group.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-faq="3">
+                <div class="faq-question">
+                    <span>Is online learning as effective as physical classes?</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Our online classes through Edumix Live provide the same quality education with interactive features, recorded sessions for revision, and direct access to lecturers. Many students find online learning even more convenient and effective.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C300,80 600,80 900,40 C1050,20 1150,0 1200,0 L1200,120 L0,120 Z" fill="#111827"/>
+        </svg>
+        
+        <div class="footer-main">
+            <div class="container footer-content">
+                <div class="footer-col">
+                    <img src="images/logo-footer.png" alt="SyZyGy Logo" class="footer-logo">
+                    <p>Boost your learning potential and excel in A/L & O/L with expert guidance.</p>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">2025 A/L</a></li>
+                        <li><a href="#">2026 A/L</a></li>
+                        <li><a href="#">2027 A/L</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Branches</h4>
+                    <ul>
+                        <li><a href="#">SyZyGy - Nugegoda</a></li>
+                        <li><a href="#">SyZyGy - Gampaha</a></li>
+                        <li><a href="#">SyZyGy - Smart Learnyn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Our Lecturers</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Class Time Tables</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Other</h4>
+                    <ul>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2025. Crafted with <i class="fas fa-heart"></i> by <strong>edumix</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
