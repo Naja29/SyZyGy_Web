@@ -44,8 +44,7 @@
     <section class="hero" id="home">
         <div class="hero-slide active">
             <img src="images/hero-image.jpg" alt="Classroom Audience" class="hero-img">
-            <div class="hero-overlay">
-            </div>
+            <div class="hero-overlay"></div>
         </div>
         <div class="slider-controls">
             <button class="arrow left" id="prevSlide" aria-label="Previous slide">
@@ -90,7 +89,10 @@
     <section class="lecturers" id="lecturers">
         <div class="container">
             <h2 class="section-title">Our Talented <span class="text-blue">Lecturers</span></h2>
-            
+            <p class="lecturers-lead">
+                Learn from the best teachers in the country who have enlightened thousands already.
+            </p>
+
             <!-- Carousel Visualization -->
             <div class="lecturer-carousel-wrapper">
                 <button class="carousel-nav prev" id="carouselPrev" aria-label="Previous lecturers">
@@ -98,36 +100,93 @@
                 </button>
                 
                 <div class="lecturer-carousel" id="lecturerCarousel">
+                    <!-- Card 1 - Tissa Janannayak -->
                     <div class="l-card" data-index="0">
-                        <img src="images/lecturer-placeholder.png" alt="Lecturer 1">
+                        <div class="lecturer-card">
+                            <div class="lecturer-image-container">
+                                <img src="images/p1.jpg" alt="Tissa Janannayak" class="lecturer-photo">
+                            </div>
+                            <div class="lecturer-info">
+                                <h3 class="lecturer-name">Tissa Janannayak</h3>
+                                <p class="lecturer-name-sinhala">ජීව විද්‍යාව</p>
+                                <p class="lecturer-qual">B.Sc (Hons) (Microbiology) Sp. in Psychology at Graduate</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Card 2 - Charitha Dissanayake -->
                     <div class="l-card" data-index="1">
-                        <img src="images/lecturer-placeholder.png" alt="Lecturer 2">
+                        <div class="lecturer-card">
+                            <div class="lecturer-image-container">
+                                <img src="images/p2.jpg" alt="Charitha Dissanayake" class="lecturer-photo">
+                            </div>
+                            <div class="lecturer-info">
+                                <h3 class="lecturer-name">Charitha Dissanayake</h3>
+                                <p class="lecturer-name-sinhala">රසායන විද්‍යාව</p>
+                                <p class="lecturer-qual">B.Sc(Engineering) Hons, University of Moratuwa</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Card 3 - Dushyantha Mahabaduge (Center) -->
                     <div class="l-card" data-index="2">
-                        <img src="images/lecturer-placeholder.png" alt="Lecturer 3">
+                        <div class="lecturer-card">
+                            <div class="lecturer-image-container">
+                                <img src="images/p3.jpg" alt="Dushyantha Mahabaduge" class="lecturer-photo">
+                            </div>
+                            <div class="lecturer-info">
+                                <h3 class="lecturer-name">Dushyantha Mahabaduge</h3>
+                                <p class="lecturer-name-sinhala">ජ්‍යොතිතය ගණිතය</p>
+                                <p class="lecturer-qual">B.Sc. Eng. (Hons.) UOM, C.I.M.A., L.I.C.A., P.G. Dip. Prj. Mgt. UOM</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Card 4 - Samitha Rathnayake -->
                     <div class="l-card" data-index="3">
-                        <img src="images/lecturer-placeholder.png" alt="Lecturer 4">
+                        <div class="lecturer-card">
+                            <div class="lecturer-image-container">
+                                <img src="images/p4.jpg" alt="Samitha Rathnayake" class="lecturer-photo">
+                            </div>
+                            <div class="lecturer-info">
+                                <h3 class="lecturer-name">Samitha Rathnayake</h3>
+                                <p class="lecturer-name-sinhala">භෞතික විද්‍යාව</p>
+                                <p class="lecturer-qual">B.Sc. (Phy.Sc.) Colombo</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Card 5 - Niru Siriwardana -->
                     <div class="l-card" data-index="4">
-                        <img src="images/lecturer-placeholder.png" alt="Lecturer 5">
+                        <div class="lecturer-card">
+                            <div class="lecturer-image-container">
+                                <img src="images/p4.jpg" alt="Niru Siriwardana" class="lecturer-photo">
+                            </div>
+                            <div class="lecturer-info">
+                                <h3 class="lecturer-name">Niru Siriwardana</h3>
+                                <p class="lecturer-name-sinhala">ව්‍යාපාර විද්‍යාව</p>
+                                <p class="lecturer-qual">University of Sri Jayewardenepura</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
                 <button class="carousel-nav next" id="carouselNext" aria-label="Next lecturers">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
 
+            <!-- Dots -->
+            <div class="carousel-dots" id="carouselDots"></div>
+
             <!-- Grid of Lecturers -->
             <div class="lecturer-grid">
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p2.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Mahesh Dissanike</h4>
+                        <h4>Lecturer Name</h4>
                         <p>Physics</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -135,10 +194,10 @@
                 
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p9.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Chamara Sampath</h4>
+                        <h4>Lecturer Name</h4>
                         <p>Chemistry</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -146,10 +205,10 @@
                 
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p3.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Prof Name</h4>
+                        <h4>Lecturer Name</h4>
                         <p>Mathematics</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -157,10 +216,10 @@
                 
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p8.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Prof Name</h4>
+                        <h4>Lecturer Name</h4>
                         <p>Biology</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -168,10 +227,10 @@
                 
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p4.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Prof Name</h4>
+                        <h4>Lecturer Name</h4>
                         <p>ICT</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -179,10 +238,10 @@
                 
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p7.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Amal Ruwan</h4>
+                        <h4>Lecturer Name</h4>
                         <p>Commerce</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -190,10 +249,10 @@
                 
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p5.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Kavindu Jayashan</h4>
+                        <h4>Lecturer Name</h4>
                         <p>English</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -201,10 +260,10 @@
                 
                 <div class="grid-card">
                     <div class="card-top">
-                        <img src="images/avatar-placeholder.png" alt="Avatar">
+                        <img src="images/p6.jpg" alt="Lecturer Name" class="grid-lecturer-photo">
                     </div>
                     <div class="card-body">
-                        <h4>Madhawa Senarathna</h4>
+                        <h4>Lecturer Name</h4>
                         <p>Economics</p>
                         <a href="#" class="view-profile">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -393,9 +452,11 @@
 
     <!-- Footer -->
     <footer>
-        <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0 C300,80 600,80 900,40 C1050,20 1150,0 1200,0 L1200,120 L0,120 Z" fill="#111827"/>
-        </svg>
+        <div class="footer-wave-container">
+            <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#111827" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,133.3C672,117,768,107,864,122.7C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
         
         <div class="footer-main">
             <div class="container footer-content">
@@ -404,7 +465,6 @@
                     <p>Boost your learning potential and excel in A/L & O/L with expert guidance.</p>
                     <div class="socials">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        
                     </div>
                 </div>
                 

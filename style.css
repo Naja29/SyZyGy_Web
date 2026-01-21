@@ -360,12 +360,20 @@ nav ul li a.active {
 }
 
 /* ===================================
-   LECTURERS SECTION
+   LECTURERS SECTION - UPDATED
    =================================== */
 .lecturers {
     margin-bottom: 80px;
-    padding: 60px 0;
-    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+    padding: 80px 0 60px;
+    background: #f3f6fd;
+}
+
+.lecturers-lead {
+    text-align: center;
+    max-width: 620px;
+    margin: 8px auto 30px;
+    color: var(--text-gray);
+    font-size: 0.95rem;
 }
 
 /* Carousel Wrapper */
@@ -374,93 +382,165 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     padding: 40px 0;
 }
 
 .carousel-nav {
-    background: var(--primary-blue);
-    color: white;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    border: 1px solid rgba(37, 99, 235, 0.35);
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
     cursor: pointer;
     transition: var(--transition);
     font-size: 1rem;
     z-index: 10;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.15);
 }
 
 .carousel-nav:hover {
-    background: #1e3a8a;
-    transform: scale(1.1);
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 .carousel-nav.prev {
-    left: 10px;
+    left: 20px;
 }
 
 .carousel-nav.next {
-    right: 10px;
+    right: 20px;
 }
 
 /* Carousel Container */
 .lecturer-carousel {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    gap: 15px;
-    height: 280px;
+    align-items: center;
+    gap: 18px;
+    height: 420px;
     overflow: hidden;
     perspective: 1000px;
+    width: 100%;
+    max-width: 980px;
 }
 
 .l-card {
-    background: #e0e0e0;
-    border-radius: 15px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    flex: 0 0 260px;
+    background: #ffffff;
+    transform-origin: center bottom;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
 }
 
-.l-card img {
-    width: 100%;
+/* Inner layout of card */
+.lecturer-card {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* Updated: Image container - no background colors */
+.lecturer-image-container {
+    flex: 0 0 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    overflow: hidden;
+}
+
+.lecturer-photo {
+    width: 350px;
+    height: 200px;
     object-fit: cover;
-    transition: var(--transition);
 }
 
-.l-card:hover img {
-    transform: scale(1.05);
+/* Info section */
+.lecturer-info {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px 20px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Card Sizes - Controlled by JavaScript */
-.l-card[data-position="0"],
-.l-card[data-position="4"] {
-    width: 140px;
-    height: 180px;
-    opacity: 0.5;
-    transform: scale(0.85);
+.lecturer-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #111827;
+}
+
+.lecturer-name-sinhala {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e40af;
+    margin-bottom: 8px;
+}
+
+.lecturer-qual {
+    font-size: 0.8rem;
+    color: #4b5563;
+    line-height: 1.4;
+}
+
+/* Card Sizes / Positions - controlled via JS with data-position 0-4 */
+.l-card[data-position="2"] {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    z-index: 3;
 }
 
 .l-card[data-position="1"],
 .l-card[data-position="3"] {
-    width: 170px;
-    height: 220px;
-    opacity: 0.75;
-    transform: scale(0.92);
+    transform: translateY(24px) scale(0.93);
+    opacity: 0.85;
+    z-index: 2;
 }
 
-.l-card[data-position="2"] {
-    width: 220px;
-    height: 270px;
-    opacity: 1;
-    transform: scale(1);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-    z-index: 5;
+.l-card[data-position="0"],
+.l-card[data-position="4"] {
+    transform: translateY(42px) scale(0.86);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+/* Dots under carousel */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 40px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #d1d5db;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.carousel-dot.active {
+    background: #2563eb;
+    transform: scale(1.25);
 }
 
 /* Lecturer Grid */
@@ -485,16 +565,20 @@ nav ul li a.active {
 }
 
 .card-top {
-    height: 140px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 250px;
+    background: #f8f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    padding: 0;
 }
 
-.card-top img {
-    width: 60px;
-    opacity: 0.7;
+.grid-lecturer-photo {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    opacity: 1;
 }
 
 .card-body {
@@ -863,25 +947,32 @@ nav ul li a.active {
 }
 
 /* ===================================
-   FOOTER
+   FOOTER - UPDATED WITH WAVE
    =================================== */
 footer {
-    background-color: var(--footer-bg);
+    background-color: transparent;
     color: white;
     position: relative;
     padding: 0;
+    margin-top: 0;
+}
+
+.footer-wave-container {
+    width: 100%;
+    line-height: 0;
+    background-color: transparent;
 }
 
 .footer-wave {
     width: 100%;
-    height: 100px;
+    height: 120px;
     display: block;
-    transform: translateY(1px);
 }
 
 .footer-main {
     background-color: var(--footer-bg);
     padding-top: 0;
+    margin-top: -2px;
 }
 
 .footer-content {
@@ -1027,28 +1118,25 @@ footer {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
-    /* Lecturers */
+
+    /* Lecturers carousel on mobile */
+    .lecturer-carousel-wrapper {
+        padding: 20px 0 10px;
+    }
+
     .lecturer-carousel {
-        gap: 10px;
-        height: 240px;
+        height: auto;
     }
-    
-    .l-card[data-position="0"],
-    .l-card[data-position="4"] {
-        width: 100px;
-        height: 140px;
+
+    .l-card {
+        flex: 0 0 80%;
+        max-width: 320px;
     }
-    
-    .l-card[data-position="1"],
-    .l-card[data-position="3"] {
-        width: 130px;
-        height: 180px;
-    }
-    
-    .l-card[data-position="2"] {
-        width: 160px;
-        height: 220px;
+
+    .l-card[data-position],
+    .l-card {
+        transform: none;
+        opacity: 1;
     }
     
     .lecturer-grid {
@@ -1082,7 +1170,7 @@ footer {
     }
     
     .footer-wave {
-        height: 60px;
+        height: 80px;
     }
 }
 
@@ -1110,9 +1198,13 @@ footer {
     }
     
     .carousel-nav {
-        width: 35px;
-        height: 35px;
+        width: 38px;
+        height: 38px;
         font-size: 0.8rem;
+    }
+    
+    .footer-wave {
+        height: 60px;
     }
 }
 
